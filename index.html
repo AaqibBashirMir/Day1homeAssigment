@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: pink;">
+ <div class="wrapper" style="display: flex;justify-content: center;align-items: center;height: 100vh;">
+
+ </div>
+ <script>
+    let wrapper=document.querySelector(".wrapper");
+    let child=React.createElement("div",{style:{width:"50vw",boxShadow:"0 0 5px gray",padding: "20px", margin:"10px",border: "1px solid black",borderRadius:"20px",color:"white",backgroundColor:"red"}},[
+    React.createElement("h1", { style: { fontSize: "50px" } }, "Learn Web Developement"),
+            React.createElement("p", { style: { fontSize: '25px' } }, "Welcome to MDN Learning arae.an open-source, collaborative project that documents web platform technologies, including HTML, CSS, JavaScript, and Web APIs."),
+            React.createElement("p", { style: { fontSize: '25px' } }, "On MDN Web Docs, we encourage our community to start and/or engage in discussions around topics related to the overall project. Discussions are categorized by different topic areas. We ask that you keep each discussion focused on the topic at hand instead of covering multiple topics in one discussion.."),
+            React.createElement("p", { style: { fontSize: '25px' } }, "Discussions are the right place if an issue needs a discussion to agree upon a course of action or define an actionable piece of work. heck out the subject of each discussion category below so that you can start your discussion in the proper place.."),
+    ])
+    ReactDOM.render(child,wrapper);
+ </script>
+</body>
+
+</html>
